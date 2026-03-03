@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            firstWordLabel = new TextBox();
+            secondWordLabel = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // firstWordLabel
             // 
-            textBox1.Location = new Point(76, 58);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Первое слово";
+            firstWordLabel.Location = new Point(76, 58);
+            firstWordLabel.Name = "firstWordLabel";
+            firstWordLabel.Size = new Size(100, 23);
+            firstWordLabel.TabIndex = 0;
+            firstWordLabel.Text = "Первое слово";
             // 
-            // textBox2
+            // secondWordLabel
             // 
-            textBox2.Location = new Point(76, 87);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "Второе слово";
+            secondWordLabel.Location = new Point(76, 87);
+            secondWordLabel.Name = "secondWordLabel";
+            secondWordLabel.Size = new Size(100, 23);
+            secondWordLabel.TabIndex = 1;
+            secondWordLabel.Text = "Второе слово";
             // 
             // button1
             // 
@@ -57,6 +57,7 @@
             button1.TabIndex = 2;
             button1.Text = "Проверить схожие буквы";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -64,8 +65,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(282, 209);
             Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(secondWordLabel);
+            Controls.Add(firstWordLabel);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -74,8 +75,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox firstWordLabel;
+        private TextBox secondWordLabel;
         private Button button1;
     }
 }
