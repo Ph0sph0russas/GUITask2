@@ -30,7 +30,7 @@
         {
             firstWordLabel = new TextBox();
             secondWordLabel = new TextBox();
-            button1 = new Button();
+            checkSameElementsButton = new Button();
             SuspendLayout();
             // 
             // firstWordLabel
@@ -49,26 +49,27 @@
             secondWordLabel.TabIndex = 1;
             secondWordLabel.Text = "Второе слово";
             // 
-            // button1
+            // checkSameElementsButton
             // 
-            button1.Location = new Point(48, 116);
-            button1.Name = "button1";
-            button1.Size = new Size(161, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Проверить схожие буквы";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            checkSameElementsButton.Location = new Point(48, 116);
+            checkSameElementsButton.Name = "checkSameElementsButton";
+            checkSameElementsButton.Size = new Size(161, 23);
+            checkSameElementsButton.TabIndex = 2;
+            checkSameElementsButton.Text = "Проверить схожие буквы";
+            checkSameElementsButton.UseVisualStyleBackColor = true;
+            checkSameElementsButton.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(282, 209);
-            Controls.Add(button1);
+            Controls.Add(checkSameElementsButton);
             Controls.Add(secondWordLabel);
             Controls.Add(firstWordLabel);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -77,6 +78,6 @@
 
         private TextBox firstWordLabel;
         private TextBox secondWordLabel;
-        private Button button1;
+        private Button checkSameElementsButton;
     }
 }

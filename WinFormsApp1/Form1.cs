@@ -5,6 +5,9 @@ namespace WinFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            firstWordLabel.Text = Properties.Settings.Default.firstWord.ToString();
+            secondWordLabel.Text = Properties.Settings.Default.secondWord.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -12,9 +15,17 @@ namespace WinFormsApp1
             var firstWord = this.firstWordLabel.Text;
             var secondWord = this.secondWordLabel.Text;
 
-            var messageAnswer=Logic.checkSameElements(firstWord, secondWord);
+            var messageAnswer = Logic.checkSameElements(firstWord, secondWord);
 
             MessageBox.Show(messageAnswer);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.firstWord = firstWordLabel.Text;
+            Properties.Settings.Default.secondWord = secondWordLabel.Text;
+            Properties.Settings.Default.Save();
+            this.Close();
         }
     }
     public class Logic
