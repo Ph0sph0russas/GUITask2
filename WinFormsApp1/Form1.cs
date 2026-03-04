@@ -25,7 +25,6 @@ namespace WinFormsApp1
             Properties.Settings.Default.firstWord = firstWordLabel.Text;
             Properties.Settings.Default.secondWord = secondWordLabel.Text;
             Properties.Settings.Default.Save();
-            this.Close();
         }
     }
     public class Logic

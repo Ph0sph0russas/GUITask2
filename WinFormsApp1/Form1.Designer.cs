@@ -35,7 +35,7 @@
             // 
             // firstWordLabel
             // 
-            firstWordLabel.Location = new Point(76, 58);
+            firstWordLabel.Location = new Point(96, 58);
             firstWordLabel.Name = "firstWordLabel";
             firstWordLabel.Size = new Size(100, 23);
             firstWordLabel.TabIndex = 0;
@@ -43,7 +43,7 @@
             // 
             // secondWordLabel
             // 
-            secondWordLabel.Location = new Point(76, 87);
+            secondWordLabel.Location = new Point(96, 87);
             secondWordLabel.Name = "secondWordLabel";
             secondWordLabel.Size = new Size(100, 23);
             secondWordLabel.TabIndex = 1;
@@ -51,7 +51,7 @@
             // 
             // checkSameElementsButton
             // 
-            checkSameElementsButton.Location = new Point(48, 116);
+            checkSameElementsButton.Location = new Point(65, 116);
             checkSameElementsButton.Name = "checkSameElementsButton";
             checkSameElementsButton.Size = new Size(161, 23);
             checkSameElementsButton.TabIndex = 2;
